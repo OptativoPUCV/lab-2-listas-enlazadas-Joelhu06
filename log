@@ -35,3 +35,16 @@ Wed, Mar 26, 2025  9:11:03 AM:
  tests:  2|5
 total_score: 15/70
 6a29007
+Wed, Mar 26, 2025  9:12:16 AM: 
+ list.c | 4 +++-
+ 1 file changed, 3 insertions(+), 1 deletion(-)
+In file included from test.c:5:0:
+list.c: In function 'nextList':
+list.c:49:29: error: 'List {aka struct List}' has no member named 'next'
+     if (list == NULL || list->next == NULL) return NULL;
+                             ^~
+list.c:50:25: error: 'List {aka struct List}' has no member named 'next'
+     list->current = list->next;
+                         ^~
+Compilation failed
+7298a12
