@@ -71,3 +71,17 @@ Wed, Mar 26, 2025  9:25:28 AM:
  tests:  6|4
 total_score: 25/70
 24d38b1
+Wed, Mar 26, 2025  9:32:20 AM: 
+ list.c | 16 +++++++++-------
+ 1 file changed, 9 insertions(+), 7 deletions(-)
+In file included from test.c:5:0:
+list.c: In function 'prevList':
+list.c:67:5: error: expected ';' before 'return'
+     return list->current->data;
+     ^~~~~~
+list.c:68:1: error: control reaches end of non-void function [-Werror=return-type]
+ }
+ ^
+cc1.exe: all warnings being treated as errors
+Compilation failed
+d9144f5
