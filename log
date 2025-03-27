@@ -156,3 +156,14 @@ Wed, Mar 26, 2025  9:00:21 PM:
  tests:  10|2
 total_score: 45/70
 c526623
+Wed, Mar 26, 2025  9:10:13 PM: 
+ list.c | 10 ++++++----
+ 1 file changed, 6 insertions(+), 4 deletions(-)
+In file included from test.c:5:0:
+list.c: In function 'pushCurrent':
+list.c:106:9: error: 'llist' undeclared (first use in this function)
+     if (llist->current->prev != NULL)
+         ^~~~~
+list.c:106:9: note: each undeclared identifier is reported only once for each function it appears in
+Compilation failed
+29f4eee
