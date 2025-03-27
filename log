@@ -140,3 +140,13 @@ Wed, Mar 26, 2025  9:59:29 AM:
  tests:  10|2
 total_score: 45/70
 93ce19d
+Wed, Mar 26, 2025  9:00:05 PM: 
+ list.c | 18 ++++++++++++++++--
+ 1 file changed, 16 insertions(+), 2 deletions(-)
+In file included from test.c:5:0:
+list.c: In function 'pushCurrent':
+list.c:111:9: error: expected ';' before 'list'
+         list->current->prev = newNode;
+         ^~~~
+Compilation failed
+d2f73cc
