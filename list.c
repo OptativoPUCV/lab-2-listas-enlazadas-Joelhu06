@@ -119,8 +119,9 @@ void * popBack(List * list) {
 void * popCurrent(List * list)
 {
     void* dato = list->current->data;
-    list->current->prev->next = list->current->next;
-    list->current->next->prev = list->current->prev;
+    if (list->current->prev != NULL) list->current->prev->next = list->current->next;
+    if (list->current->next != NULL) list->current->next->prev = list->current->prev;
+
     free(list->current);
 
     return dato;
